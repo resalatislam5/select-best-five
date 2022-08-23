@@ -25,18 +25,16 @@ function SelectedBtn(btn,select) {
         player.style.color = '#fff'
         player.style.background = 'red';
 }
-// inputString to Number 
-function cost(insertCost) {
+//  inputString to Number 
+function inputValue(insertCost) {
     const perplayer = document.getElementById(insertCost);
     const perplayerString = perplayer.value;
     const perplayerValue = parseFloat(perplayerString);
     return perplayerValue;
 }
-
-document.getElementById('btn-calculate-player').addEventListener('click', function () {
-    const selectedV = document.getElementById('selected-v');
-    const perplayerValue = cost('per-player')
-    const perplayerResult = selectedV.children.length * perplayerValue;
-    const insertPlayerCost = document.getElementById('insert-player-cost');
-    insertPlayerCost.innerText =  perplayerResult;
-})
+function textValue(insertCost) {
+    const PlayerCost = document.getElementById(insertCost);
+    const perplayerString = PlayerCost.innerText;
+    const perplayerValue = parseFloat(perplayerString);
+    return perplayerValue;
+}

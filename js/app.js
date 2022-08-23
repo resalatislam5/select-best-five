@@ -22,4 +22,22 @@ document.getElementById('btn-Renato').addEventListener('click', function () {
     SelectedBtn('btn-Renato', 'selected-v')
 
 })
-
+//btn-calculate-player
+document.getElementById('btn-calculate-player').addEventListener('click', function () {
+    const selectedV = document.getElementById('selected-v');
+    const perplayerValue = inputValue('per-player')
+    const perplayerResult = selectedV.children.length * perplayerValue;
+    const insertPlayerCost = document.getElementById('insert-player-cost');
+    insertPlayerCost.innerText =  perplayerResult;
+})
+// insert-Total-cost
+document.getElementById('btn-total-calculate').addEventListener('click', function () {
+    const expenses = textValue('insert-player-cost');
+    const managerCost = inputValue('manager-cost');
+    const coachCost = inputValue('coach-cast');
+    console.log(managerCost, coachCost)
+    const totalCost = expenses + managerCost + coachCost;
+    console.log(totalCost)
+    const insertPlayerCost = document.getElementById('insert-Total-cost');
+    insertPlayerCost.innerText =  totalCost;
+})
