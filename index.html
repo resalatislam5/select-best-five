@@ -63,7 +63,7 @@
                     <p class="flex justify-start text-lg col-span-2">120 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-masi" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-masi" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -79,7 +79,7 @@
                     <p class="flex justify-start text-lg col-span-2">120 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-Neymar" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-Neymar" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@
                     <p class="flex justify-start text-lg col-span-2">110 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-Kylian" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-Kylian" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@
                     <p class="flex justify-start text-lg col-span-2">112 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-Machado" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-Machado" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -127,7 +127,7 @@
                     <p class="flex justify-start text-lg col-span-2">116 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-Ramos" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-Ramos" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -143,7 +143,7 @@
                     <p class="flex justify-start text-lg col-span-2">118 Assist</p>
                   </div>
                   <div class="card-actions w-full">
-                    <button id="btn-Renato" class="btn btn-primary w-full">SELECT</button>
+                    <button id="btn-Renato" class="btn btn-disable btn-primary w-full">SELECT</button>
                   </div>
                 </div>
               </div>
@@ -170,12 +170,12 @@
               </div>
               <div class="grid grid-cols-2 mt-5">
                 <p class="text-lg text-gray-300 font-semibold">Per Player</p>
-                <input class="bg-black border-2 border-white p-2" type="text" value="1000">
+                <input id="per-player" class="bg-black border-2 border-white p-2" type="text" value="1000">
               </div>
-              <button class="border-teal-700 border-2 my-6 text-white w-full py-2 hover:bg-slate-800 hover:border-2 hover:border-slate-800 text-lg">Calculate</button>
+              <button id="btn-calculate-player" class="border-teal-700 border-2 my-6 text-white w-full py-2 hover:bg-slate-800 hover:border-2 hover:border-slate-800 text-lg">Calculate</button>
               <div class="grid grid-cols-2 my-2 text-lg">
-                <p>Per Player</p>
-                <p>0</p>
+                <p>Player Expenses</p>
+                <p>$<span id="insert-player-cost">0</span></p>
               </div>
               <!-- Manager -->
               <div class="grid grid-cols-2 my-4 text-lg">
@@ -187,6 +187,10 @@
                 <input class="bg-black border-2 border-white p-2" type="text" value="0">
               </div>
               <button class=" my-6 bg-primary text-white w-full py-2 hover:bg-slate-800  text-lg">Calculate</button>
+              <div class="grid grid-cols-2 my-2 text-lg">
+                <p>Total</p>
+                <p>$<span id="insert-Total-cost">0</span></p>
+              </div>
           </div>
           <!-- end -->
           </div>
