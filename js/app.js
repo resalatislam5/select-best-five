@@ -35,9 +35,7 @@ document.getElementById('btn-total-calculate').addEventListener('click', functio
     const expenses = textValue('insert-player-cost');
     const managerCost = inputValue('manager-cost');
     const coachCost = inputValue('coach-cast');
-    console.log(managerCost, coachCost)
     const totalCost = expenses + managerCost + coachCost;
-    console.log(totalCost)
     const insertPlayerCost = document.getElementById('insert-Total-cost');
     insertPlayerCost.innerText =  totalCost;
 })
